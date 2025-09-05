@@ -524,8 +524,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>قسم المنتجات الدائري المعزول</title>
     <style>
-
-        
         /* نظام عزل تام باستخدام ID فريد */
         #isolated-products-carousel-8765 {
             all: initial;
@@ -749,79 +747,155 @@
     </style>
 </head>
 <body>
-    <!-- قسم المنتجات المعزول تمامًا -->
-    <div id="isolated-products-carousel-8765">
-        <h2 class="products-title"></h2>
-        
-        <div class="carousel-container">
-            <div class="carousel">
-                <!-- المنتج 1 -->
-                <div class="product-item" data-angle="0">
-                    <div class="product-image">
-                        <img src="66.webp" alt="سماعات لاسلكية">
-                        <div class="product-overlay">
-                            <span class="product-name">Zenith Vape Mod</span>
-                            <span class="product-price">199 ر.س</span>
-                        </div>
-                    </div>
-                    <p class="product-description"></p>
-                    <a class="product-button">اطلب الآن</a>
-                </div>
-                
-                <!-- المنتج 2 -->
-                <div class="product-item" data-angle="90">
-                    <div class="product-image">
-                        <img src="77.jpg" alt="ساعة ذكية">
-                        <div class="product-overlay">
-                            <span class="product-name">Sultan Shisha Classic</span>
-                            <span class="product-price">349 ر.س</span>
-                        </div>
-                    </div>
-                    <p class="product-description">Sultan Shisha Classic</p>
-                    <a class="product-button">اطلب الآن</a>
-                </div>
-                
-                <!-- المنتج 3 -->
-                <div class="product-item" data-angle="180">
-                    <div class="product-image">
-                        <img src="88.webp" alt="هاتف ذكي">
-                        <div class="product-overlay">
-                            <span class="product-name">Apex Vape Pen</span>
-                            <span class="product-price">1299 ر.س</span>
-                        </div>
-                    </div>
-                    <p class="product-description"></p>
-                    <a class="product-button">اطلب الآن</a>
-                </div>
-                
-                <!-- المنتج 4 -->
-                <div class="product-item" data-angle="270">
-                    <div class="product-image">
-                        <img src="99.webp" alt="كاميرا رقمية">
-                        <div class="product-overlay">
-                            <span class="product-name">Empire Shisha Pro</span>
-                            <span class="product-price">899 ر.س</span>
-                        </div>
-                    </div>
-                    <p class="product-description"></p>
-                    <a class="product-button">اطلب الآن</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="carousel-controls">
-            <div class="control-btn prev-btn">❮</div>
-            <div class="control-btn next-btn">❯</div>
-        </div>
-        
-        <div class="carousel-indicators">
-            <div class="indicator active" data-index="0"></div>
-            <div class="indicator" data-index="1"></div>
-            <div class="indicator" data-index="2"></div>
-            <div class="indicator" data-index="3"></div>
-        </div>
+<!-- 🔥 قسم المنتجات المعزول 🔥 -->
+<section class="isolated-products-section-alaa">
+  <h2 class="isolated-title-alaa">Products</h2>
+  <div class="isolated-slider-alaa">
+    <div class="isolated-card-alaa active">
+      <img src="66.webp" alt="Product 1">
+      <h3>FOX RED</h3>
+      <p></p>
+      <a href="#" class="isolated-btn-alaa">اشتري الآن</a>
     </div>
+    <div class="isolated-card-alaa">
+      <img src="77.jpg" alt="Product 2">
+      <h3>FOX BLUE</h3>
+      <p></p>
+      <a href="#" class="isolated-btn-alaa">اشتري الآن</a>
+    </div>
+    <div class="isolated-card-alaa">
+      <img src="88.webp" alt="Product 3">
+      <h3>FOX BROWN</h3>
+      <p></p>
+      <a href="#" class="isolated-btn-alaa">اشتري الآن</a>
+    </div>
+    <div class="isolated-card-alaa">
+      <img src="99.webp" alt="Product 4">
+      <h3>FOX GREEN</h3>
+      <p></p>
+      <a href="#" class="isolated-btn-alaa">اشتري الآن</a>
+    </div>
+  </div>
+</section>
 
+<!-- CSS معزول بالكامل -->
+<style>
+.isolated-products-section-alaa {
+  font-family: "Cairo", sans-serif;
+  padding: 60px 20px;
+  background: #121212;
+  text-align: center;
+  overflow: hidden;
+}
+
+.isolated-title-alaa {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #ff2e2e;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.isolated-slider-alaa {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  height: 420px;
+}
+
+.isolated-card-alaa {
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+  border-radius: 15px;
+  padding: 20px;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  opacity: 0;
+  transform: translateX(100%) scale(0.9);
+  transition: all 1s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.isolated-card-alaa img {
+  max-width: 200px;   /* الصورة ما تتجاوز هذا العرض */
+  max-height: 150px;  /* الصورة ما تتجاوز هذا الارتفاع */
+  width: auto;        /* عرض تلقائي */
+  height: auto;       /* ارتفاع تلقائي */
+  object-fit: contain; /* يحافظ على النسبة */
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.isolated-card-alaa h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.isolated-card-alaa p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.isolated-btn-alaa {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff2e2e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.isolated-btn-alaa:hover {
+  background: #d81c1c;
+  box-shadow: 0 0 15px #ff2e2e;
+}
+
+/* البطاقة النشطة */
+.isolated-card-alaa.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  z-index: 2;
+}
+
+/* البطاقة السابقة */
+.isolated-card-alaa.prev {
+  opacity: 0;
+  transform: translateX(-100%) scale(0.9);
+  z-index: 1;
+}
+</style>
+
+<!-- JavaScript معزول -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const cards = document.querySelectorAll(".isolated-card-alaa");
+  let current = 0;
+
+  function showSlide(index) {
+    cards.forEach((card, i) => {
+      card.classList.remove("active", "prev");
+      if (i === index) {
+        card.classList.add("active");
+      } else if (i === (index - 1 + cards.length) % cards.length) {
+        card.classList.add("prev");
+      }
+    });
+  }
+
+  function nextSlide() {
+    current = (current + 1) % cards.length;
+    showSlide(current);
+  }
+
+  showSlide(current);
+  setInterval(nextSlide, 4000); // كل 4 ثواني تقليب
+});
+</script>
     <script>
         (function() {
             // العناصر
